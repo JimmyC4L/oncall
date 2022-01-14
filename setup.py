@@ -29,9 +29,9 @@ setuptools.setup(
     install_requires=[
         'falcon==1.4.1',
         'falcon-cors',
-        'greenlet==0.4.16',
+        'greenlet==1.1.2',
         'asn1crypto==1.0.0',
-        'gevent==1.4.0',
+        'gevent==21.12.0',
         'ujson',
         'sqlalchemy',
         'PyYAML',

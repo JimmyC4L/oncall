@@ -25,6 +25,13 @@ Setup mysql schema:
 mysql -u root -p < ./db/schema.v0.sql
 ```
 
+Create a new user
+```sql
+CREATE USER 'oncall'@'%' IDENTIFIED WITH mysql_native_password BY '1234';
+GRANT ALL PRIVILEGES ON oncall.* TO 'oncall'@'%' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
+```
+
 Setup app config by editing configs/config.yaml.
 
 Optionally, you can import dummy data for testing:
